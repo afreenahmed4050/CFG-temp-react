@@ -17,3 +17,5 @@ export default function Maps() {
     </>
   );
 }
+
+//use maps api key
