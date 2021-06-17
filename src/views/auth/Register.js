@@ -71,7 +71,7 @@ export default function SignUp() {
             setError('')
             setLoading(true)
             await signup(emailRef.current.value, passwordRef.current.value)
-            history.push("/login")
+            history.push("/auth/login")
         } catch {
             setError("Failed to create an account")
         }
@@ -151,7 +151,7 @@ export default function SignUp() {
           </Button>
           <Grid container justify="flex-end">
             <Grid item>
-              <Link variant="body2" to="/login">Already have an account? Sign in</Link>
+              <Link variant="body2" to="/auth/login">Already have an account? Sign in</Link>
               
             </Grid>
           </Grid>

@@ -30,18 +30,18 @@ export default function Index() {
                 components for ReactJS, Vue and Angular.
               </p>
               <div className="mt-12">
-                <a
-                  href="../auth/register"
+                <Link
                   className="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-lightBlue-500 active:bg-lightBlue-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
+                  to="auth/register"
                 >
                   Register Now
-                </a>
-                <a
-                  href="./auth/login"
+                </Link>
+                <Link
                   className="github-star ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blueGray-700 active:bg-blueGray-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
+                  to="auth/login"
                 >
                   Sign In
-                </a>
+                </Link>
               </div>
             </div>
           </div>
