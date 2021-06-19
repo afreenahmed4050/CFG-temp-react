@@ -13,7 +13,7 @@ export default function Dashboard() {
     <>
     <div className="flex flex-wrap mt-4">
         <div className="w-full xl:w-6/12 mb-12 xl:mb-0 px-4">
-          <CardPieChart />
+          <CardPieChart resolved={20} inProgress={60} unresolved={20} />
         </div>
         <div className="w-full xl:w-6/12 mb-12 xl:mb-0 px-4">
           <CardBarChart />

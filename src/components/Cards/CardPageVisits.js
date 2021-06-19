@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
 
 // components
 
-export default function CardPageVisits() {
+export default function CardPageVisits(props) {
 
   const classes = useStyles();
 
@@ -60,12 +60,12 @@ export default function CardPageVisits() {
               </tr>
             </thead>
             <tbody>
-                <Grievance />
-                <Grievance />
-                <Grievance />
-                <Grievance />
-                <Grievance />
-                <Grievance />
+                <Grievance name="GPS Piau Muniyari" date="13-Sep-2018" status="Resolved" org="Additional Deputy Commissioner (ADC), Sonipat" details="Construction of rain water harvest facility and arrangement of medicine for insects and pests"/>
+                <Grievance name="GPS Piau Muniyari" date="13-Sep-2018" status="Pending" org="Additional Deputy Commissioner (ADC), Sonipat" details="Construction of rain water harvest facility and arrangement of medicine for insects and pests"/>
+                <Grievance name="GPS Piau Muniyari" date="13-Sep-2018" status="Unresolved" org="Additional Deputy Commissioner (ADC), Sonipat" details="Construction of rain water harvest facility and arrangement of medicine for insects and pests"/>
+                <Grievance name="GPS Piau Muniyari" date="13-Sep-2018" status="Resolved" org="Additional Deputy Commissioner (ADC), Sonipat" details="Construction of rain water harvest facility and arrangement of medicine for insects and pests"/>
+                <Grievance name="GPS Piau Muniyari" date="13-Sep-2018" status="Resolved" org="Additional Deputy Commissioner (ADC), Sonipat" details="Construction of rain water harvest facility and arrangement of medicine for insects and pests"/>
+                <Grievance name="GPS Piau Muniyari" date="13-Sep-2018" status="Pending" org="Additional Deputy Commissioner (ADC), Sonipat" details="Construction of rain water harvest facility and arrangement of medicine for insects and pests"/>
               </tbody>
           </table>
         </div>

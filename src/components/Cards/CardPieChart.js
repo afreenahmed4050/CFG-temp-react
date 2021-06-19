@@ -11,9 +11,15 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function CardPieChart() {
+export default function CardPieChart(props) {
 
   const classes = useStyles();
+
+  var resolved = props.resolved;
+  var inProgress = (props.inProgress);
+  var unresolved = props.unresolved;
+
+  
 
   return (
     <div>
@@ -23,10 +29,11 @@ export default function CardPieChart() {
         chartType="PieChart"
         loader={<div>Loading Chart</div>}
         data={[
-          ['Pizza', 'Popularity'],
-          ['Resolved', 40],
-          ['In Progress', 25],
-          ['Unresolved', 35],
+          ['Status', 'Number'],
+          ['Resolved', resolved],
+          ['Unresolved', unresolved],
+          ['Pending', inProgress],
+          
         ]}
         options={{
           title: 'Grievance Response Status',

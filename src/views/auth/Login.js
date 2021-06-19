@@ -47,6 +47,14 @@ const useStyles = makeStyles((theme) => ({
   submit: {
     margin: theme.spacing(3, 0, 2),
   },
+  input: {
+    border: '0 !important',
+   // This line disable the blue border
+   boxShadow: '0 !important',
+   '&:hover': {
+       border: '0 !important'
+    }
+  },
 }));
 
 export default function SignIn() {
@@ -83,13 +91,13 @@ export default function SignIn() {
           <LockOutlinedIcon />
         </Avatar>
         <Typography variant="h5" gutterBottom>
-         Heading
+         Sign In
         </Typography>
         <Typography component="h1" variant="h5">
           {error && <Alert severity="error">{error}</Alert>}
         </Typography>
         <form className={classes.form} onSubmit={handleSubmit}>
-          <TextField
+          <TextField className={classes.input}
             variant="outlined"
             margin="normal"
             required
@@ -101,7 +109,7 @@ export default function SignIn() {
             autoFocus
             inputRef={emailRef}
           />
-          <TextField
+          <TextField className={classes.input}
             variant="outlined"
             margin="normal"
             required
