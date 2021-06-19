@@ -1,125 +1,54 @@
-import React from "react";
-import Chart from "chart.js";
+import React from 'react'
+import Chart from "react-google-charts";
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles((theme) => ({
+  barChart: {
+    marginTop: theme.spacing(2),  
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  },
+}));
 
 export default function CardBarChart() {
-  React.useEffect(() => {
-    let config = {
-      type: "bar",
-      data: {
-        labels: [
-          "January",
-          "February",
-          "March",
-          "April",
-          "May",
-          "June",
-          "July",
-        ],
-        datasets: [
-          {
-            label: new Date().getFullYear(),
-            backgroundColor: "#ed64a6",
-            borderColor: "#ed64a6",
-            data: [30, 78, 56, 34, 100, 45, 13],
-            fill: false,
-            barThickness: 8,
-          },
-          {
-            label: new Date().getFullYear() - 1,
-            fill: false,
-            backgroundColor: "#4c51bf",
-            borderColor: "#4c51bf",
-            data: [27, 68, 86, 74, 10, 4, 87],
-            barThickness: 8,
-          },
-        ],
-      },
-      options: {
-        maintainAspectRatio: false,
-        responsive: true,
-        title: {
-          display: false,
-          text: "Orders Chart",
-        },
-        tooltips: {
-          mode: "index",
-          intersect: false,
-        },
-        hover: {
-          mode: "nearest",
-          intersect: true,
-        },
-        legend: {
-          labels: {
-            fontColor: "rgba(0,0,0,.4)",
-          },
-          align: "end",
-          position: "bottom",
-        },
-        scales: {
-          xAxes: [
-            {
-              display: false,
-              scaleLabel: {
-                display: true,
-                labelString: "Month",
-              },
-              gridLines: {
-                borderDash: [2],
-                borderDashOffset: [2],
-                color: "rgba(33, 37, 41, 0.3)",
-                zeroLineColor: "rgba(33, 37, 41, 0.3)",
-                zeroLineBorderDash: [2],
-                zeroLineBorderDashOffset: [2],
-              },
-            },
-          ],
-          yAxes: [
-            {
-              display: true,
-              scaleLabel: {
-                display: false,
-                labelString: "Value",
-              },
-              gridLines: {
-                borderDash: [2],
-                drawBorder: false,
-                borderDashOffset: [2],
-                color: "rgba(33, 37, 41, 0.2)",
-                zeroLineColor: "rgba(33, 37, 41, 0.15)",
-                zeroLineBorderDash: [2],
-                zeroLineBorderDashOffset: [2],
-              },
-            },
-          ],
-        },
-      },
-    };
-    let ctx = document.getElementById("bar-chart").getContext("2d");
-    window.myBar = new Chart(ctx, config);
-  }, []);
+
+  const classes = useStyles();
+
   return (
-    <>
-      <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded">
-        <div className="rounded-t mb-0 px-4 py-3 bg-transparent">
-          <div className="flex flex-wrap items-center">
-            <div className="relative w-full max-w-full flex-grow flex-1">
-              <h6 className="uppercase text-blueGray-400 mb-1 text-xs font-semibold">
-                Performance
-              </h6>
-              <h2 className="text-blueGray-700 text-xl font-semibold">
-                Total orders
-              </h2>
-            </div>
-          </div>
-        </div>
-        <div className="p-4 flex-auto">
-          {/* Chart */}
-          <div className="relative h-350-px">
-            <canvas id="bar-chart"></canvas>
-          </div>
-        </div>
-      </div>
-    </>
-  );
+    <div>
+      <Chart className={classes.barChart}
+        width={'34vw'}
+        height={'300px'}
+        chartType="ComboChart"
+        loader={<div>Loading Chart</div>}
+        data={[
+          [
+            'Month',
+            'Education',
+            'Infrastructure',
+            'Sanitation',
+            'Lack of resources',
+            'Electricity',
+            'Average',
+          ],
+          ['2021/05', 165, 938, 522, 998, 450, 614.6],
+          ['2021/06', 135, 1120, 599, 1268, 288, 682],
+          ['2021/07', 157, 1167, 587, 807, 397, 623],
+          ['2021/08', 139, 1110, 615, 968, 215, 609.4],
+          ['2021/09', 136, 691, 629, 1026, 366, 569.6],
+        ]}
+        options={{
+          title: 'Grievance Popularity by Category',
+          vAxis: { title: 'Numbers' },
+          hAxis: { title: 'Category' },
+          seriesType: 'bars',
+          series: { 5: { type: 'line' } },
+        }}
+        rootProps={{ 'data-testid': '1' }}
+      />
+    </div>
+  )
 }
+
+

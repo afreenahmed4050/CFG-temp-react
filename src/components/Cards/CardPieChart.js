@@ -18,7 +18,7 @@ export default function CardPieChart() {
   return (
     <div>
       <Chart className={classes.pieChart}
-        width={'430px'}
+        width={'34vw'}
         height={'300px'}
         chartType="PieChart"
         loader={<div>Loading Chart</div>}

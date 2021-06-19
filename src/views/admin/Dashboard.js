@@ -16,7 +16,7 @@ export default function Dashboard() {
           <CardPieChart />
         </div>
         <div className="w-full xl:w-6/12 mb-12 xl:mb-0 px-4">
-          <CardPieChart />
+          <CardBarChart />
         </div>
       
         <div className="w-full xl:w-12/12 mb-12 xl:mb-0 px-4">
