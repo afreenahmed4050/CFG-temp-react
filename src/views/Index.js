@@ -14,34 +14,33 @@ export default function Index() {
           <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
             <div className="pt-32 sm:pt-0">
               <h2 className="font-semibold text-4xl text-blueGray-600">
-                Team 79 - Code For Good 2021 Submission
+                SAMARTHYA - Team 79 CFG
               </h2>
               <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-              tempor incididunt ut labore et dolore magna aliqua.{" "}
+              This is a dedicated Web App developed for the Public and  {" "}
                 <a
-                  href="https://tailwindcss.com/?ref=creativetim"
+                  href="https://samarthya.co/"
                   className="text-blueGray-600"
                   target="_blank"
                 >
-                  Tailwind CSS
+                  Samarthya Group
                 </a>
-                . It features multiple HTML elements and it comes with dynamic
-                components for ReactJS, Vue and Angular.
+                &nbsp;to view the grievances from various SMC’s from different educational institutions. This application allows the users to easily visualize the lifecycle of a grievance that is filed to the governmental authorities and the actions taken by them through Dashboards.
               </p>
               <div className="mt-12">
                 <Link
-                  className="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-lightBlue-500 active:bg-lightBlue-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
-                  to="auth/register"
+                  className="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-black active:bg-black uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
+                  to="#"
                 >
-                  Register Now
+                 Download the App
                 </Link>
-                <Link
+               
+                {/* <Link
                   className="github-star ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blueGray-700 active:bg-blueGray-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
                   to="auth/login"
                 >
                   Sign In
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
@@ -54,7 +53,7 @@ export default function Index() {
         />
       </section>
 
-      <section className="mt-48 md:mt-40 pb-40 relative bg-blueGray-100">
+      {/* <section className="mt-48 md:mt-40 pb-40 relative bg-blueGray-100">
         <div
           className="-mt-20 top-0 bottom-auto left-0 right-0 w-full absolute h-20"
           style={{ transform: "translateZ(0)" }}
@@ -500,9 +499,9 @@ export default function Index() {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className="block relative z-1 bg-blueGray-600">
+      {/* <section className="block relative z-1 bg-blueGray-600">
         <div className="container mx-auto">
           <div className="justify-center flex flex-wrap">
             <div className="w-full lg:w-12/12 px-4  -mt-24">
@@ -555,9 +554,9 @@ export default function Index() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className="py-20 bg-blueGray-600 overflow-hidden">
+      {/* <section className="py-20 bg-blueGray-600 overflow-hidden">
         <div className="container mx-auto pb-64">
           <div className="flex flex-wrap justify-center">
             <div className="w-full md:w-5/12 px-12 md:px-4 ml-auto mr-auto md:mt-64">
@@ -598,9 +597,9 @@ export default function Index() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className="pb-16 bg-blueGray-200 relative pt-32">
+      {/* <section className="pb-16 bg-blueGray-200 relative pt-32">
         <div
           className="-mt-20 top-0 bottom-auto left-0 right-0 w-full absolute h-20"
           style={{ transform: "translateZ(0)" }}
@@ -658,7 +657,7 @@ export default function Index() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <Footer />
     </>
   );

@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 
 // components
 
-import IndexNavbar from "components/Navbars/IndexNavbar.js";
+import Navbar from "components/Navbars/AuthNavbar.js";
 import Footer from "components/Footers/Footer.js";
 
 export default function Landing() {
   return (
     <>
-      <IndexNavbar />
+      <Navbar transparent />
       <main>
         <div className="relative pt-16 pb-32 flex content-center items-center justify-center min-h-screen-75">
           <div
@@ -29,10 +29,12 @@ export default function Landing() {
               <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
                 <div className="pr-12">
                   <h1 className="text-white font-semibold text-5xl">
-                    SAMARTHYA
+                    Your story starts with us.
                   </h1>
                   <p className="mt-4 text-lg text-blueGray-200">
-                  One of the major pain-points in the implementation of programs to improve school quality has been the inability of the system to fix accountability at the last mile. The mode of fixing accountability from the top creates extreme challenges. In such a scenario, empowering communities at a school-level for governance is critical to the success of the movement towards quality. This is what Samarthya is working towards through parent members of SMCs.
+                    This is a simple example of a Landing Page you can build
+                    using Notus React. It features multiple CSS components based
+                    on the Tailwind CSS design system.
                   </p>
                 </div>
               </div>
@@ -66,11 +68,12 @@ export default function Landing() {
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
-                      <i className="fas fa-eye"></i>
+                      <i className="fas fa-award"></i>
                     </div>
-                    <h6 className="text-xl font-semibold">Vision</h6>
+                    <h6 className="text-xl font-semibold">Awarded Agency</h6>
                     <p className="mt-2 mb-4 text-blueGray-500">
-                    Public Schools will become equitable centers of excellence
+                      Divide details about your product or agency work into
+                      parts. A paragraph describing a feature will be enough.
                     </p>
                   </div>
                 </div>
@@ -80,11 +83,12 @@ export default function Landing() {
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-lightBlue-400">
-                      <i className="fas fa-users"></i>
+                      <i className="fas fa-retweet"></i>
                     </div>
-                    <h6 className="text-xl font-semibold">Samarthya</h6>
+                    <h6 className="text-xl font-semibold">Free Revisions</h6>
                     <p className="mt-2 mb-4 text-blueGray-500">
-                    Gathering citizens and communities to collaborate amongst themselves to improve the quality of 'public services'
+                      Keep you user engaged by providing meaningful information.
+                      Remember that by this time, the user is curious.
                     </p>
                   </div>
                 </div>
@@ -94,11 +98,12 @@ export default function Landing() {
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-emerald-400">
-                      <i className="fas fa-trophy"></i>
+                      <i className="fas fa-fingerprint"></i>
                     </div>
-                    <h6 className="text-xl font-semibold">Mission</h6>
+                    <h6 className="text-xl font-semibold">Verified Company</h6>
                     <p className="mt-2 mb-4 text-blueGray-500">
-                    Fostering parent leadership
+                      Write a few lines about each one. A paragraph describing a
+                      feature will be enough. Keep you user engaged!
                     </p>
                   </div>
                 </div>
@@ -108,22 +113,25 @@ export default function Landing() {
             <div className="flex flex-wrap items-center mt-32">
               <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
                 <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
-                  <i className="fas fa-bolt text-xl"></i>
+                  <i className="fas fa-user-friends text-xl"></i>
                 </div>
                 <h3 className="text-3xl mb-2 font-semibold leading-normal">
-                The Crisis
+                  Working with us is a pleasure
                 </h3>
                 <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-600">
-                The government schools in India are in a bad state. After 7 years of implementation, only 9.54% of the schools comply by the norms & Standards laid down in the Right To Free and Compulsory Education Act of 2009 (RTE). This means that children studying in 90% school in India, don’t have complete access to their Right to Education.      
+                  Don't let your uses guess by attaching tooltips and popoves to
+                  any element. Just make sure you enable them first via
+                  JavaScript.
                 </p>
                 <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-blueGray-600">
-                A staggering 44% boys and 43% girls passed 8th grade with less than 60% marks
-                <br />
-                38% schools in India don’t have a playground
+                  The kit comes with three pre-built pages to help you get
+                  started faster. You can change the text and images and you're
+                  good to go. Just make sure you enable them first via
+                  JavaScript.
                 </p>
-                {/* <Link to="/" className="font-bold text-blueGray-700 mt-8">
+                <Link to="/" className="font-bold text-blueGray-700 mt-8">
                   Check Notus React!
-                </Link> */}
+                </Link>
               </div>
 
               <div className="w-full md:w-4/12 px-4 mr-auto ml-auto">
@@ -146,10 +154,12 @@ export default function Landing() {
                       ></polygon>
                     </svg>
                     <h4 className="text-xl font-bold text-white">
-                      We at Samarthya,
+                      Top Notch Services
                     </h4>
                     <p className="text-md font-light mt-2 text-white">
-                    Samarthya helps each public school form a council aka SMC (School Management Committee) having parents and higher school staff as its members to discuss potential issues and act upon them
+                      The Arctic Ocean freezes every winter and much of the
+                      sea-ice then thaws every summer, and that process will
+                      continue whatever happens.
                     </p>
                   </blockquote>
                 </div>
@@ -193,23 +203,23 @@ export default function Landing() {
                   <div className="text-lightBlue-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-lightBlue-300">
                     <i className="fas fa-rocket text-xl"></i>
                   </div>
-                  <h3 className="text-3xl font-semibold">Theory of Change</h3>
+                  <h3 className="text-3xl font-semibold">A growing company</h3>
                   <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
-                  “We provide knowledge and skills about RTE to parents of public (government) school going children. Parents have a problem that their children are not learning. We solve this problem by informing and equipping SMC parent members with the knowledge and skills required to perform their duties as envisioned in Section 21 of RTE.
-                  <br />
-                  We’re unique because we foster parent leaders [resource person(s) who knows RTE, government systems in and out] from within a community to make community led implementation of RTE a reality.”
+                    The extension comes with three pre-built pages to help you
+                    get started faster. You can change the text and images and
+                    you're good to go.
                   </p>
                   <ul className="list-none mt-6">
                     <li className="py-2">
                       <div className="flex items-center">
                         <div>
                           <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-lightBlue-600 bg-lightBlue-200 mr-3">
-                            <i className="far fa-dot-circle"></i>
+                            <i className="fas fa-fingerprint"></i>
                           </span>
                         </div>
                         <div>
                           <h4 className="text-blueGray-500">
-                          Our intervention fosters parent leaders
+                            Carefully crafted components
                           </h4>
                         </div>
                       </div>
@@ -218,12 +228,12 @@ export default function Landing() {
                       <div className="flex items-center">
                         <div>
                           <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-lightBlue-600 bg-lightBlue-200 mr-3">
-                            <i className="far fa-dot-circle"></i>
+                            <i className="fab fa-html5"></i>
                           </span>
                         </div>
                         <div>
                           <h4 className="text-blueGray-500">
-                          Parent leaders inform the community about the status of the schools continuously
+                            Amazing page examples
                           </h4>
                         </div>
                       </div>
@@ -232,26 +242,12 @@ export default function Landing() {
                       <div className="flex items-center">
                         <div>
                           <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-lightBlue-600 bg-lightBlue-200 mr-3">
-                            <i className="far fa-dot-circle"></i>
+                            <i className="far fa-paper-plane"></i>
                           </span>
                         </div>
                         <div>
                           <h4 className="text-blueGray-500">
-                          Communities come together to ensure public schools function as per government mandated norms and standards
-                          </h4>
-                        </div>
-                      </div>
-                    </li>
-                    <li className="py-2">
-                      <div className="flex items-center">
-                        <div>
-                          <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-lightBlue-600 bg-lightBlue-200 mr-3">
-                            <i className="far fa-dot-circle"></i>
-                          </span>
-                        </div>
-                        <div>
-                          <h4 className="text-blueGray-500">
-                          Public Schools become equitable centers of excellence
+                            Dynamic components
                           </h4>
                         </div>
                       </div>
@@ -263,7 +259,7 @@ export default function Landing() {
           </div>
         </section>
 
-        {/* <section className="pt-20 pb-48">
+        <section className="pt-20 pb-48">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center text-center mb-24">
               <div className="w-full lg:w-6/12 px-4">
@@ -418,9 +414,9 @@ export default function Landing() {
               </div>
             </div>
           </div>
-        </section> */}
+        </section>
 
-        {/* <section className="pb-20 relative block bg-blueGray-800">
+        <section className="pb-20 relative block bg-blueGray-800">
           <div
             className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
             style={{ transform: "translateZ(0)" }}
@@ -493,8 +489,8 @@ export default function Landing() {
               </div>
             </div>
           </div>
-        </section> */}
-        {/* <section className="relative block py-24 lg:pt-0 bg-blueGray-800">
+        </section>
+        <section className="relative block py-24 lg:pt-0 bg-blueGray-800">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center lg:-mt-64 -mt-48">
               <div className="w-full lg:w-6/12 px-4">
@@ -562,7 +558,7 @@ export default function Landing() {
               </div>
             </div>
           </div>
-        </section> */}
+        </section>
       </main>
       <Footer />
     </>

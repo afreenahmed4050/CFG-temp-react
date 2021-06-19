@@ -20,7 +20,7 @@ export default function FooterSmall(props) {
                   href="https://www.creative-tim.com?ref=nr-footer-small"
                   className="text-white hover:text-blueGray-300 text-sm font-semibold py-1"
                 >
-                  Team 79
+                  SAMRATHYA
                 </a>
               </div>
             </div>
@@ -47,15 +47,15 @@ export default function FooterSmall(props) {
                     href="http://blog.creative-tim.com?ref=nr-footer-small"
                     className="text-white hover:text-blueGray-300 text-sm font-semibold block py-1 px-3"
                   >
-                    Blog
+                   Download App
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://github.com/creativetimofficial/notus-react/blob/main/LICENSE.md?ref=nr-footer-small"
+                    href="https://samarthya.co/"
                     className="text-white hover:text-blueGray-300 text-sm font-semibold block py-1 px-3"
                   >
-                    MIT License
+                    Visit Us
                   </a>
                 </li>
               </ul>

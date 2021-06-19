@@ -1,8 +1,10 @@
+
 /*eslint-disable*/
 import React from "react";
 import { Link } from "react-router-dom";
 // components
-
+import Typography from '@material-ui/core/Typography';
+import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import IndexDropdown from "components/Dropdowns/IndexDropdown.js";
 
 export default function Navbar(props) {
@@ -16,7 +18,7 @@ export default function Navbar(props) {
               to="/"
               className="text-blueGray-700 text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
             >
-              Team 79
+              SAMARTHYA
             </Link>
             <button
               className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
@@ -34,7 +36,7 @@ export default function Navbar(props) {
             id="example-navbar-warning"
           >
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
-              <li className="flex items-center">
+              {/* <li className="flex items-center">
                 <a
                   className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdemos.creative-tim.com%2Fnotus-react%2F%23%2F"
@@ -54,24 +56,38 @@ export default function Navbar(props) {
                   <i className="text-blueGray-400 fab fa-twitter text-lg leading-lg " />
                   <span className="lg:hidden inline-block ml-2">Tweet</span>
                 </a>
-              </li>
+              </li> */}
 
-              <li className="flex items-center">
+              {/* <li className="flex items-center">
                 <a
                   className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   href="https://github.com/creativetimofficial/notus-react?ref=nr-index-navbar"
                   target="_blank"
                 >
-                  <i className="text-blueGray-400 fab fa-github text-lg leading-lg " />
-                  <span className="lg:hidden inline-block ml-2">Star</span>
+                  <i className="text-blueGray-400 fab fa-youtube text-lg leading-lg " />
+                  <span className="lg:hidden inline-block ml-2">Watch</span>
                 </a>
-              </li>
+              </li> */}
+              <li className="flex items-center">
+             
+              <Link to="/landing">
+                About Us&nbsp;&nbsp;&nbsp;
+              </Link>
 
+           
+              </li>
               <li className="flex items-center">
               <button 
                 className="bg-lightBlue-500 text-white active:bg-lightBlue-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
                 type="button">
                   <Link to="/auth/login"><i className="fas fa-sign-in-alt"></i>&nbsp;&nbsp;Sign In</Link>
+              </button>
+              </li>
+              <li className="flex items-center">
+              <button 
+                className="bg-blueGray-600 text-white active:bg-blueGray-700 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
+                type="button">
+                  <Link to="/auth/register"><i className="fas fa-hands-helping"></i>&nbsp;&nbsp;Register</Link>
               </button>
               </li>
             </ul>
