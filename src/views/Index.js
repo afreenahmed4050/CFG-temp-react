@@ -1,5 +1,6 @@
 /*eslint-disable*/
 import React from "react";
+import CardPageVisitsList from "components/Cards/CardPageVisitsList";
 import { Link } from "react-router-dom";
 
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
@@ -53,6 +54,16 @@ export default function Index() {
         />
       </section>
 
+      <section>
+        <div>
+        <CardPageVisitsList />
+        <br />
+        <CardPageVisitsList />
+        </div>
+      </section>
+      <br />
+      <br />
+      <br />
       {/* <section className="mt-48 md:mt-40 pb-40 relative bg-blueGray-100">
         <div
           className="-mt-20 top-0 bottom-auto left-0 right-0 w-full absolute h-20"
@@ -658,7 +669,12 @@ export default function Index() {
           </div>
         </div>
       </section> */}
-      <Footer />
+      <section>
+        <div>
+        <Footer />
+        </div>
+      </section>
+
     </>
   );
 }
