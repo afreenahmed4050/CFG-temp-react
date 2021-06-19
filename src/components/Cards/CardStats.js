@@ -57,8 +57,8 @@ export default function CardStats({
 }
 
 CardStats.defaultProps = {
-  statSubtitle: "Traffic",
-  statTitle: "350,897",
+  statSubtitle: "Resolved Cases",
+  statTitle: "19000",
   statArrow: "up",
   statPercent: "3.48",
   statPercentColor: "text-emerald-500",
